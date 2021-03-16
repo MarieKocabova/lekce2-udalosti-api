@@ -26,7 +26,7 @@ function increaseFontSize1px(udalost) {
     //najdi font size
     //převeď na int
     //k font size přičti 1
-    currentFontSize++;
+    //currentFontSize++;
 };
 
 
