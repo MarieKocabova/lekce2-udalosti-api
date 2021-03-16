@@ -42,6 +42,18 @@ li {
 	margin-bottom: 0.5em;
 }
 
+.odstavec {
+	font-size: 16px;
+}
+
+.odstavec-bold {
+	font-weight: bold;
+}
+
+.odstavec-red {
+	color: red;
+}
+
 .napoveda {
 	margin-top: 50px;
 	padding: 20px;
