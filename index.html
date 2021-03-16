@@ -13,20 +13,18 @@
 
 	<p class="odstavec" onmouseover="odstavecOnMouseOver()" onmouseout="odstavecOnMouseOut()" >V elipse spí lev.</p>
 
-	<button onclick="toggleRed()">červený po kliknutí</button>
-	<button onclick="biggerOnclick(event)">větší po kliknutí</button>
+	<button onclick="toggleRed()">červený/černý font</button>
+	<button onclick="increaseFontSize1px(event)">větší font o 1px</button>
 
-	<div class="ctverecek zluty" onmouseover = ></div>
-
-	<div class="ctverecek zeleny"></div>
-
-	<img class="obrazek" src="obrazky/kocka.jpg">
-
-	<button class="tlacitko">Čudlajs</button>
+	<h2>Audio</h2>
 
 	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
-	<button onclick="prehraj('#js-audio')">přehraj písničku</button>
-	<button onclick="zastav('#js-audio')">stopni písničku</button>
+	<button onclick="prehraj('#js-audio')">přehraj</button>
+	<button onclick="zastav('#js-audio')">pauzni</button>
+	<button onclick="ztisUplne('#js-audio')">ztiš úplně</button>
+	<button onclick="volumeHalf('#js-audio')">volume 50%</button>
+	<button onclick="volumeMax('#js-audio')">volume max</button>
+	<button onclick="backToStart('#js-audio')">vrať na začátek</button>
 
 	<script src="main.js"></script>
 
