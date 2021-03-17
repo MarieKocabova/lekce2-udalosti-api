@@ -1,10 +1,5 @@
-// tady je místo pro náš program
 
-let nadpis = document.querySelector('h1');
-nadpis.classList.add('zluty');
-
-nadpis.classList.remove('zluty');
-
+//písmo po najetí myši ztuční
 let odstavec = document.querySelector('.odstavec');
 function odstavecOnMouseOver() {
     odstavec.classList.add('odstavec-bold');
@@ -13,28 +8,20 @@ function odstavecOnMouseOut() {
     odstavec.classList.remove('odstavec-bold');
 }
 
+//tlačítko toggle písmo červená/černá
 function toggleRed() {
     odstavec.classList.toggle('odstavec-red');
 }
 
-console.log(odstavec);
- 
-function increaseFontSize1px(udalost) {
-    //udalost.target.
-    console.log(udalost);
-    
+//zvětšít písmo o 1px
+function increaseFontSize1px() {
     //najdi font size
-    //převeď na int
+    style = window.getComputedStyle(odstavec).getPropertyValue('font-size');
+    //převeď na float
+    currentSize = parseFloat(style);
     //k font size přičti 1
-    //currentFontSize++;
+    odstavec.style.fontSize = (currentSize + 1) + 'px';
 };
-
-
-
- //<button onclick="zvetsitPismo(‚.odstavec, 1);">větší po kliknutí</button>
- //parseInt(element.style.fontSize);
-
- // https://www.w3schools.com/jsref/obj_event.asp - události
 
 
 // audio přehraj
@@ -67,9 +54,10 @@ function volumeMax (elementSelector) {
     audioElement.volume = 1;
 }
 
-//audio vrať na začátek
+//audio pusť od začátku
 function backToStart (elementSelector) {
     let audioElement = document.querySelector(elementSelector);
     audioElement.load();
+    audioElement.play();
 }
 

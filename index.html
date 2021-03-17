@@ -14,18 +14,21 @@
 	<p class="odstavec" onmouseover="odstavecOnMouseOver()" onmouseout="odstavecOnMouseOut()" >V elipse spí lev.</p>
 
 	<button onclick="toggleRed()">červený/černý font</button>
-	<button onclick="increaseFontSize1px(event)">větší font o 1px</button>
+	<button onclick="increaseFontSize1px()">větší font o 1px</button>
 	 
 
 	<h2>Audio</h2>
 
 	<audio id="js-audio" src="audio/dingdingdang.mp3" preload="auto"></audio>
-	<button onclick="prehraj('#js-audio')">přehraj</button>
-	<button onclick="zastav('#js-audio')">pauzni</button>
-	<button onclick="ztisUplne('#js-audio')">ztiš úplně</button>
-	<button onclick="volumeHalf('#js-audio')">volume 50%</button>
-	<button onclick="volumeMax('#js-audio')">volume max</button>
-	<button onclick="backToStart('#js-audio')">vrať na začátek</button>
+	<button class="tlacitko" onclick="prehraj('#js-audio')">přehraj</button>
+	<button class="tlacitko" onclick="zastav('#js-audio')">pauzni</button>
+	<button class="tlacitko" onclick="backToStart('#js-audio')">od začátku</button>
+
+	<h3>Audio volume</h3>
+	<button class="tlacitko" onclick="ztisUplne('#js-audio')">ztiš úplně</button>
+	<button class="tlacitko" onclick="volumeHalf('#js-audio')">volume 50%</button>
+	<button class="tlacitko" onclick="volumeMax('#js-audio')">volume max</button>
+	
 
 	<script src="main.js"></script>
 
